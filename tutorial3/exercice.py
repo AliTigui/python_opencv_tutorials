@@ -9,7 +9,6 @@ for i in range(0,300,20):
             f=False
         else:
             f=True
-
 cv2.circle(canvas, (300//2,300//2), 50, (0,255,0), -1) # draw the circle
 cv2.imshow("Canvas", canvas)
 cv2.waitKey(0)
