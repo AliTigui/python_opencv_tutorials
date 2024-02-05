@@ -1,4 +1,4 @@
-# simple image proccessing (shifting translate rotation resizing fliping)
+# simple image proccessing (shifting translate rotation resizing fliping croping)
 
 import numpy as np
 import argparse
@@ -62,3 +62,10 @@ cv2.waitKey(0)
 flipped = cv2.flip(image, -1)
 cv2.imshow("Flipped Horizontally & Vertically", flipped)
 cv2.waitKey(0)
+cv2.destroyAllWindows()
+#Croping
+# with croping we take part of the image
+crop=image[100:150,200:225]
+cv2.imshow("Croped", crop)
+cv2.waitKey(0)
+cv2.imwrite("croped.png",crop)
