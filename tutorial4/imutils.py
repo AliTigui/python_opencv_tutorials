@@ -35,3 +35,5 @@ INTER_AREA):
         return resized
     resized = cv2.resize(image, dim, interpolation = inter)
     return resized
+if __name__=="__main__":
+    pass

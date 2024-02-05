@@ -1,10 +1,10 @@
-# reaading from camera 
+# reaading from camera
 
 import numpy as np 
 import cv2
-import ultraimport
-rotate = ultraimport('__dir__/../tutorial4/imutils.py', 'rotate')
-
+#import ultraimport
+#rotate = ultraimport('__dir__/../tutorial4/imutils.py', 'rotate')
+from tutorial4.imutils import rotate
 cap=cv2.VideoCapture(0)
 while True:
     ret,frame=cap.read()
