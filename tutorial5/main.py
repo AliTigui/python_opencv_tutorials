@@ -20,7 +20,10 @@ while True:
             g=sum(smaller_frame[i][j])//3
             gray[i][j]=(g,g,g)
     canva[h//2:,0:w//2]=gray
-    canva[h//2:,w//2:]=smaller_frame
+    #--adding text
+    font=cv2.FONT_HERSHEY_COMPLEX
+    canva[h//2:,w//2:]=cv2.putText(smaller_frame,"it me ali",(100,200),font,0.5,(0,0,0),1)
+    #---
     cv2.imshow("camera",canva)
     if cv2.waitKey(1)==ord("q"):
         break
